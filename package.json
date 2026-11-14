@@ -1,0 +1,19 @@
+{
+  "name": "fieldservice-source-aggregator",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node --import tsx src/dispatch_decision.test.ts",
+    "start": "node --import tsx src/fieldservice_aggregation.ts"
+  },
+  "dependencies": {
+    "openai": "^4.104.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}
